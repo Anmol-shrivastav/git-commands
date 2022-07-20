@@ -1,0 +1,53 @@
+1) git status
+It will tell about status of git repository, you have created a
+repository or not, which files are in staging area.
+
+2) git init
+Initialize a new git repository for you.
+
+3) git add --a
+	It will add all files to the git staging area.
+ a)git add fileName; ex-> git add "src/mycomponents/Footer.js"
+	It will add a particular file to the git staging area.
+
+4) git commit -m "Your message about commit"
+It will commit your files that were present in staging area.
+
+5) git log
+It will give you your commit history with hash code of every
+commit.
+
+6) rm -rf .git
+It will delete your git repository completely...all hash code, 
+all history will be deleted.
+
+7) git clone https://github.com/addressOfGithubRepository.git
+			or
+   git clone https://github.com/addressOfGithubRepository.git "folderName" 
+	->It will create new folder as "folderName" and Download github repository in that folder.
+
+8) Git file status life cycle
+	https://shitalmule04.github.io/file-status-lifecycle-in-git.html#:~:text=File%20has%20four%20states%20in,that%20are&text=Unmodified%20state%20%3A%20Files%20are%20already,changes%20file%20status%20become%20unmodified.	Read about it and make notes of it.
+
+9) git pull => when project someone updated code on github but you haven't updated it yet then just take a pull then it will update code in your local system
+	git pull --rebase origin master
+
+10)rollback to a commit
+	git reset hashcodeofcommit
+
+11) git remote add origin repo_url_link
+12) git remote -v => it will show origin link
+13) git push -u origin master
+14) git branch
+15) git checkout branchName
+16) git branch -d branchName
+
+
+
+//contribute online
+fork original remp to your github then from your github account clone that repo made new git branch
+do changes in it commit in in local git then do >git push -u origin new-branch-name
+
+
+17) To change git remote origin
+	git remote set-url origin gitRepoLink 
